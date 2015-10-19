@@ -10,6 +10,21 @@ Don't forget to call the function at the bottom
 
 import Foundation
 
+let isCoding: Bool = true
 
-//: [Previous](@previous)
+func bugWhatsUp(isCoding: Bool){
+    
+    if (isCoding){
+    
+        print("Don't bug me!")
+    
+    } else {
+    
+        print("What's up?")
+    
+    }
+    
+}
+
+bugWhatsUp(isCoding)//: [Previous](@previous)
 //: [Next](@next)

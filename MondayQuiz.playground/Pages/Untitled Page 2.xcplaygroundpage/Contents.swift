@@ -12,7 +12,25 @@ Don't forget to call the function at the bottom
 
 import Foundation
 
+let dictionary: [String: Int] = [
+    "Ben" : 24,
+    "Benjamin" : 25,
+    "Benhamin" : 26,
+    "Been" : 27,
+]
 
+func addYearHappyBirthday(dictionary: [String: Int]) -> [String: Int] {
+    
+    var newDictionary: [String: Int] = [:]
 
+    for var person in dictionary {
+        person.1 += 1 // Why wouldn't this work by itself??? Why couldn't I just return "dictionary" after this?
+        newDictionary[person.0] = person.1 // Why did I have to add this line/logic to make this work?
+    }
+    
+    return newDictionary
+}
+
+addYearHappyBirthday(dictionary)
 //: [Previous](@previous)
 //: [Next](@next)

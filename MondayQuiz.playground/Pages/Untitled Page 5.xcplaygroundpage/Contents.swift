@@ -4,8 +4,7 @@ import Foundation
 
 
 //Enter your name
-var name = ""
-
+var name = "Benjamin Patch"
 
 
 /*:
